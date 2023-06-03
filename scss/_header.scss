@@ -1,0 +1,48 @@
+
+#main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 36rem;
+
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #111216;
+        height: 8.3rem;
+        }
+
+        #App{
+            margin-top: 3.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            #emotion-radios{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #161616;
+            border-radius: 5px;
+            margin: 3rem 0;
+            }
+    
+            button{
+                margin-top: 3rem;
+                width: 22rem;
+                height: 6.2rem;
+                background: #111216;
+                border-radius: 7px;
+                color: white;
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 2.4rem;
+                color: #FFFFFF;
+            }
+    
+        }
+    }
+
+

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%; /* Estou mudando a proporção de 1rem para 10 pixels para ficar mais
+    fácil utilizar a unidade de medida rem. 1 rem = 10 px*/
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#main{
+    width:100% ;
+    max-width: 124.6rem;
+    height: 200rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    
+}
