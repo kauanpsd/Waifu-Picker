@@ -1,14 +1,24 @@
 import { waifusData } from './data.js'
 
-const emotionRadioDiv = document.getElementById("emotion-radios")
-const getBtn = document.getElementById('get-image')
+const emotionRadioDiv = document.getElementById("emotion-radios");
+const getBtn = document.getElementById('get-image');
+const gifOnly = document.getElementById('gif-check')
 
 function getMatchWaifu(){
 
-    const waifuvalue = document.querySelector( 'input[type="radio"]:checked')
-    if(waifuvalue){
-        console.log(waifuvalue.value)
-    }
+    const gifChecker = gifOnly.checked
+    const waifuvalue = document.querySelector( 'input[type="radio"]:checked').value
+    const getSelectedWaifu = waifusData.filter(function (waifu){
+
+        if(gifChecker){
+            return waifu.isGif && waifu.emotionTags.includes(waifuvalue)
+        } else{
+            return !waifu.isGif && waifu.emotionTags.includes(waifuvalue)
+        }
+        
+    })
+
+   return getSelectedWaifu
     
 }
 
