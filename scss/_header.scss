@@ -6,6 +6,7 @@
     max-width: 36rem;
 
 
+
     header{
         width: 100%;
         display: flex;
@@ -28,6 +29,14 @@
             border-radius: 5px;
             margin: 3rem 0;
             width: 31.2rem;
+            
+            .highlight{
+                background-color: #490074;
+                color: #ffffff;
+                font-weight: bold;
+                accent-color: #341a4909;
+            }
+
             .radio{
                 display: flex;
                 align-items: center;
