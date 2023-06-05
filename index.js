@@ -3,6 +3,13 @@ import { waifusData } from './data.js'
 const emotionRadioDiv = document.getElementById("emotion-radios");
 const getBtn = document.getElementById('get-image');
 const gifOnly = document.getElementById('gif-check')
+const waifuModalInner = document.getElementById('waifu-modal-inner');
+const waifuModal = document.getElementById('waifu-modal');
+const closeBtn = document.getElementById('waifu-modal-close-btn');
+
+closeBtn.addEventListener('click', function(){
+    waifuModal.style.display='none'
+})
 
 function getMatchWaifu(){
 
@@ -22,8 +29,31 @@ function getMatchWaifu(){
     
 }
 
+function getSingleWaifu(){
+    const waifusArray = getMatchWaifu()
+    
+    if(waifusArray.length === 1){
+       return waifusArray[0]
+    } else {
+        let randomN = Math.floor(Math.random() * waifusArray.length)
+       return waifusArray[randomN]
+    }
 
-getBtn.addEventListener('click',getMatchWaifu)
+}
+
+function renderCat(){
+    const waifuObj = getSingleWaifu()
+
+    waifuModalInner.innerHTML =`
+    <img class="waifu-img" 
+    src="${waifuObj.image}"
+    alt="${waifuObj.alt}"
+    >`
+    waifuModal.style.display='flex'
+}
+
+
+getBtn.addEventListener('click',renderCat)
 
 emotionRadioDiv.addEventListener('change', function(e){
     const radios = document.getElementsByClassName('radio');

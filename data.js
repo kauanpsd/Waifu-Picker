@@ -32,7 +32,7 @@ export const waifusData = [
     {
         emotionTags: ["happy", "relaxed"],
         isGif: false,
-        image: "https://i.pinimg.com/564x/3c/60/21/bc1qzk3kxhdxnzkpdgdn9ueg34y08smxgfv0hxvcu3.jpg",
+        image: "https://i.pinimg.com/originals/70/da/ac/70daacbe9ff561380d0a200986752795.jpg",
         alt: "happy rem",
     },
     {
@@ -148,7 +148,7 @@ export const waifusData = [
     {
         emotionTags: ["relaxed"],
         isGif: true,
-        image: "https://i.pinimg.com/originals/3d/21/f9/bc1qzk3kxhdxnzkpdgdn9ueg34y08smxgfv0hxvcu3.gif",
+        image: "https://64.media.tumblr.com/6d1f663ff3e01cee113f61d5bb645636/tumblr_ngv2q8C8t01timq39o1_500.gif",
         alt: "Anime Girl relaxed",
     },
     {
